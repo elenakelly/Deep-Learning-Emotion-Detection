@@ -1,7 +1,16 @@
+
+
+
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
 from keras.layers import Dense,Dropout,Flatten
 from keras.layers import Conv2D,MaxPooling2D
+
+train_data = 'archive/train'
+validation_data = 'archive/validation'
+
+train_data_generator = ImageDataGenerator(rescale=1./255)
+validation_data_generator = ImageDataGenerator(rescale=1./255)
 
 
 # Initialising the CNN
