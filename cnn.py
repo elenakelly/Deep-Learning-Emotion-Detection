@@ -115,7 +115,7 @@ plt.show()
 my_model = load_model('emotion_detection_model_100epochs.h5', compile=False)
 
 #Generate a batch of images
-test_img, test_lbl = validation_generator.__next__()
+test_img, test_lbl = test_generator.__next__()
 predictions=my_model.predict(test_img)
 
 predictions = np.argmax(predictions, axis=1)
