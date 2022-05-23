@@ -1,8 +1,8 @@
 # Deep Learning Emotion Detection
 
-A deep learning aplication, using CNNs to develop a solution for a classification problem, namely the emotion recognition task. <br />
+A deep learning aplication,  using CNNs to develop a solution for a classification problem, namely the emotion recognition task. <br />
 Data-set used: https://www.kaggle.com/datasets/msambare/fer2013 <br />
-
+  
 
 ## Methodology
 
