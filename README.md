@@ -13,7 +13,7 @@ Data-set used: https://www.kaggle.com/datasets/msambare/fer2013 <br />
 
 ## CNN architecture
 
-Sequential model with Layers:
+Sequential model1:
   - Conv2D (3, 3) with 32 Channels, activation with relu
   - Conv2D (3, 3) with 64 Channels, activation with relu
   - MaxPooling2D (2, 2)
@@ -27,6 +27,47 @@ Sequential model with Layers:
   - Flatten
   - Dense with 512 Channels, activation with relu
   - Dropout
+  - Dense with 7 Channels, activation with softmax
+
+  Sequential model2
+  - Conv2D (3, 3) with 32 Channels, activation with relu
+  - BatchNormalization
+  - MaxPooling2D (2, 2)
+  - Conv2D (3, 3) with 64 Channels, activation with relu
+  - BatchNormalization
+  - MaxPooling2D (2, 2)
+  - Conv2D (3, 3) with 128 Channels, activation with relu
+  - BatchNormalization
+  - MaxPooling2D (2, 2)
+  - Conv2D (3, 3) with 256 Channels, activation with relu
+  - BatchNormalization
+  - MaxPooling2D (2, 2)
+  - Flatten
+  - Dense with 128 Channels, activation with relu
+  - BatchNormalization
+  - Dense with 256 Channels, activation with relu
+  - BatchNormalization
+  - Dense with 7 Channels, activation with sigmoid
+
+  Sequential model3:
+  - Conv2D (4, 4) with 64 Channels, activation with relu
+  - BatchNormalization
+  - Conv2D (4, 4) with 64 Channels, activation with relu
+  - BatchNormalization
+  - MaxPooling2D (2, 2)
+  - Droupout(0.2)
+  - Conv2D (4, 4) with 128 Channels, activation with relu
+  - BatchNormalization
+  - MaxPooling2D (2, 2)
+  - Droupout(0.3)
+ 
+  - Conv2D (4, 4) with 128 Channels, activation with relu
+  - BatchNormalization
+  - Conv2D (4, 4) with 128 Channels, activation with relu - BatchNormalization 
+  - MaxPooling2D (2, 2)
+  - Droupout(0.4)
+  - Flatten
+  - Dense with 128 Channels, activation with linear
   - Dense with 7 Channels, activation with softmax
 
 Optimizer : Adam
